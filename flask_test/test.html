@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" action="http://localhost:8080/login">
+    <!-- live server로 띄운 서버이므로 port번호를 5500으로 설정함
+    그런데 내가 만든 플라스크 서버는 8080으로 만들었기 때문에 action값에서 url전체를
+    가져와서 /login라우팅 설정을 해줘야함
+    그렇지않으면 다른 port번호에 설정되기때문에 제대로 작동 x -->
+      <center>
+        <h1>로그인</h1>
+        ID : <input type="text" name="user_name" /><br />
+        PW: <input type="text" name="pw" /><br />
+        EMAIL: <input type="text" name="email_address"/><br><br>
+        <input type="submit" />
+      </center>
+    </form>
+  </body>
+</html>
